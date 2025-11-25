@@ -624,6 +624,7 @@ const initLanguageSwitch = () => {
 const initNavToggle = () => {
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".main-nav");
+  const header = document.querySelector(".site-header");
   if (!toggle || !nav) return;
 
   toggle.addEventListener("click", () => {
@@ -636,6 +637,11 @@ const initNavToggle = () => {
       nav.classList.remove("open");
       toggle.setAttribute("aria-expanded", "false");
     });
+  });
+
+  header?.addEventListener("mouseleave", () => {
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
   });
 };
 
