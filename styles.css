@@ -182,25 +182,30 @@ p {
 
 .lang-switch {
   display: inline-flex;
-  gap: 6px;
-  padding: 6px;
-  border-radius: 999px;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 14px;
   background: var(--bg);
   border: 1px solid var(--border);
 }
 
-.lang-switch button {
+.lang-switch .lang-icon {
   border: none;
-  background: transparent;
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-weight: 700;
+  background: #fff;
+  padding: 8px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  font-weight: 800;
   color: var(--navy);
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  display: inline-grid;
+  place-items: center;
+  font-size: 0.9rem;
 }
 
-.lang-switch button.active {
+.lang-switch .lang-icon.active {
   background: linear-gradient(140deg, var(--primary), var(--primary-2));
   color: #fff;
   box-shadow: 0 8px 18px rgba(232, 106, 42, 0.35);
@@ -358,6 +363,18 @@ p {
 .stat-label {
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .hero-visual {

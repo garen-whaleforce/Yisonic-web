@@ -32,9 +32,18 @@
       </nav>
       <div class="header-actions">
         <div class="lang-switch" role="group" aria-label="Language switch">
-          <button class="active" data-lang="zh" data-i18n="lang-zh">繁體中文</button>
-          <button data-lang="en" data-i18n="lang-en">English</button>
-          <button data-lang="ja" data-i18n="lang-ja">日本語</button>
+          <button class="lang-icon active" data-lang="zh" title="繁體中文">
+            <span aria-hidden="true">繁</span><span class="sr-only" data-i18n="lang-zh">繁體中文</span>
+          </button>
+          <button class="lang-icon" data-lang="zh-cn" title="简体中文">
+            <span aria-hidden="true">简</span><span class="sr-only" data-i18n="lang-zh-cn">简体中文</span>
+          </button>
+          <button class="lang-icon" data-lang="en" title="English">
+            <span aria-hidden="true">EN</span><span class="sr-only" data-i18n="lang-en">English</span>
+          </button>
+          <button class="lang-icon" data-lang="ja" title="日本語">
+            <span aria-hidden="true">日</span><span class="sr-only" data-i18n="lang-ja">日本語</span>
+          </button>
         </div>
         <a class="btn outline" href="#contact" data-i18n="nav-contact">聯絡我們</a>
         <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
