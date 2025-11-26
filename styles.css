@@ -116,35 +116,13 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  min-width: 230px;
+  min-width: auto;
 }
 
-.brand-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(140deg, var(--primary), var(--primary-2));
-  color: #fff;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  box-shadow: 0 12px 28px rgba(232, 106, 42, 0.32);
-}
-
-.brand-text {
-  display: grid;
-  gap: 4px;
-}
-
-.brand-name {
-  font-weight: 700;
-  color: var(--ink);
-}
-
-.brand-tag {
-  color: var(--muted);
-  font-size: 0.95rem;
+.brand-logo {
+  height: 56px;
+  width: auto;
+  display: block;
 }
 
 .main-nav {
