@@ -82,7 +82,89 @@
             <h3 data-i18n="hero-visual-highlight">Ultrasonic Intelligence</h3>
             <p class="chip-note" data-i18n="hero-visual-note">Angle · Identification · Distance · Velocity · Density</p>
             <div class="chip-pulse" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
+              <!-- 4 個不同的 PMUT 晶片版本展示 -->
+              <div class="chip-item">
+                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" class="chip-diagram chip-1">
+                  <defs>
+                    <filter id="board-shadow">
+                      <feGaussianBlur stdDeviation="2"/>
+                      <feOffset dx="0" dy="2"/>
+                    </filter>
+                  </defs>
+                  <!-- PCB 基板 -->
+                  <rect x="20" y="20" width="110" height="110" fill="#1a4d2e" stroke="#d4af37" stroke-width="1" rx="3"/>
+                  <!-- 晶片位置 -->
+                  <rect x="35" y="35" width="80" height="80" fill="#2d5a4f" stroke="#4a9d6f" stroke-width="1" rx="2"/>
+                  <!-- 接觸墊 -->
+                  <rect x="25" y="50" width="8" height="12" fill="#d4af37" class="pad-pulse"/>
+                  <rect x="25" y="75" width="8" height="12" fill="#d4af37" class="pad-pulse"/>
+                  <rect x="117" y="50" width="8" height="12" fill="#d4af37" class="pad-pulse"/>
+                  <rect x="117" y="75" width="8" height="12" fill="#d4af37" class="pad-pulse"/>
+                  <!-- 晶片標記 -->
+                  <text x="75" y="82" font-size="8" fill="#d4af37" text-anchor="middle">PMUT</text>
+                </svg>
+              </div>
+
+              <div class="chip-item">
+                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" class="chip-diagram chip-2">
+                  <!-- PCB 基板 -->
+                  <rect x="20" y="20" width="110" height="110" fill="#1a3a52" stroke="#00b8e6" stroke-width="1" rx="3"/>
+                  <!-- 精細的晶片結構 -->
+                  <rect x="35" y="35" width="80" height="80" fill="#0d5a80" stroke="#00d9ff" stroke-width="0.5" rx="2"/>
+                  <!-- 導線圖案 -->
+                  <line x1="40" y1="50" x2="110" y2="50" stroke="#00d9ff" stroke-width="0.5" opacity="0.5"/>
+                  <line x1="40" y1="70" x2="110" y2="70" stroke="#00d9ff" stroke-width="0.5" opacity="0.5"/>
+                  <line x1="40" y1="90" x2="110" y2="90" stroke="#00d9ff" stroke-width="0.5" opacity="0.5"/>
+                  <!-- 接觸點 -->
+                  <circle cx="30" cy="40" r="3" fill="#00d9ff" class="trace-glow"/>
+                  <circle cx="30" cy="110" r="3" fill="#00d9ff" class="trace-glow"/>
+                  <circle cx="120" cy="40" r="3" fill="#00d9ff" class="trace-glow"/>
+                  <circle cx="120" cy="110" r="3" fill="#00d9ff" class="trace-glow"/>
+                </svg>
+              </div>
+
+              <div class="chip-item">
+                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" class="chip-diagram chip-3">
+                  <!-- PCB 基板 -->
+                  <rect x="20" y="20" width="110" height="110" fill="#2d1b3d" stroke="#a78bfa" stroke-width="1" rx="3"/>
+                  <!-- 晶片核心 -->
+                  <rect x="35" y="35" width="80" height="80" fill="#3d2555" stroke="#c4b5fd" stroke-width="1" rx="2"/>
+                  <!-- 微結構網格 -->
+                  <circle cx="50" cy="50" r="6" fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.6"/>
+                  <circle cx="75" cy="50" r="6" fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.6"/>
+                  <circle cx="100" cy="50" r="6" fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.6"/>
+                  <circle cx="50" cy="75" r="6" fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.6"/>
+                  <circle cx="75" cy="75" r="6" fill="#a78bfa" stroke="#c4b5fd" stroke-width="0.5"/>
+                  <circle cx="100" cy="75" r="6" fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.6"/>
+                  <circle cx="50" cy="100" r="6" fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.6"/>
+                  <circle cx="75" cy="100" r="6" fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.6"/>
+                  <circle cx="100" cy="100" r="6" fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.6"/>
+                  <!-- 接腳 -->
+                  <rect x="25" y="65" width="6" height="20" fill="#a78bfa" class="pin-shine"/>
+                  <rect x="119" y="65" width="6" height="20" fill="#a78bfa" class="pin-shine"/>
+                </svg>
+              </div>
+
+              <div class="chip-item">
+                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" class="chip-diagram chip-4">
+                  <!-- PCB 基板 -->
+                  <rect x="20" y="20" width="110" height="110" fill="#1a3a2a" stroke="#10b981" stroke-width="1" rx="3"/>
+                  <!-- 主晶片區域 -->
+                  <rect x="35" y="35" width="80" height="80" fill="#0d4f3a" stroke="#34d399" stroke-width="1" rx="2"/>
+                  <!-- 陣列式接觸墊 -->
+                  <circle cx="50" cy="45" r="2.5" fill="#34d399" class="sensor-pulse"/>
+                  <circle cx="75" cy="45" r="2.5" fill="#34d399" class="sensor-pulse"/>
+                  <circle cx="100" cy="45" r="2.5" fill="#34d399" class="sensor-pulse"/>
+                  <circle cx="50" cy="75" r="2.5" fill="#34d399" class="sensor-pulse"/>
+                  <circle cx="75" cy="75" r="3" fill="#10b981" class="sensor-center"/>
+                  <circle cx="100" cy="75" r="2.5" fill="#34d399" class="sensor-pulse"/>
+                  <circle cx="50" cy="105" r="2.5" fill="#34d399" class="sensor-pulse"/>
+                  <circle cx="75" cy="105" r="2.5" fill="#34d399" class="sensor-pulse"/>
+                  <circle cx="100" cy="105" r="2.5" fill="#34d399" class="sensor-pulse"/>
+                  <!-- 邊框強調 -->
+                  <rect x="35" y="35" width="80" height="80" fill="none" stroke="#34d399" stroke-width="1" opacity="0.3" rx="2"/>
+                </svg>
+              </div>
             </div>
           </div>
           <div class="orb orb-1" aria-hidden="true"></div>
