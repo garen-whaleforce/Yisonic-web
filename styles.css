@@ -176,22 +176,22 @@ p {
   flex-wrap: wrap;
   min-width: 0;
   padding: 0;
-  opacity: 0.4;
   max-height: 45px;
   overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+  color: rgba(229, 231, 235, 0.3);
 }
 
 .site-header:hover .main-nav {
-  opacity: 1;
   max-height: 100px;
+  color: var(--ink);
 }
 
 .main-nav a {
   padding: 8px 12px;
   border-radius: 8px;
   font-weight: 600;
-  color: var(--ink);
+  color: currentColor;
   transition: all 0.3s ease;
   white-space: nowrap;
   flex-shrink: 0;
@@ -251,12 +251,12 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  color: rgba(229, 231, 235, 0.4);
+  transition: color 0.3s ease;
 }
 
 .site-header:hover .header-actions {
-  opacity: 1;
+  color: var(--ink);
 }
 
 .lang-switch {
