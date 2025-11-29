@@ -150,6 +150,8 @@ p {
   align-items: center;
   gap: 12px;
   min-width: auto;
+  opacity: 1 !important;
+  flex-shrink: 0;
 }
 
 .brand-logo {
@@ -158,13 +160,12 @@ p {
   display: block;
   filter: drop-shadow(0 0 8px rgba(0, 217, 255, 0.15));
   transition: all 0.3s ease;
-  opacity: 0.85;
+  opacity: 1 !important;
 }
 
 .brand:hover .brand-logo {
   filter: drop-shadow(0 0 16px rgba(0, 217, 255, 0.35)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
   transform: scale(1.08);
-  opacity: 1;
 }
 
 .main-nav {
