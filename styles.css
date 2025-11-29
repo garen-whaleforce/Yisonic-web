@@ -156,6 +156,8 @@ p {
   height: 56px;
   width: auto;
   display: block;
+  background: transparent;
+  mix-blend-mode: screen;
   filter: brightness(1.1) drop-shadow(0 0 6px rgba(0, 217, 255, 0.15)) contrast(1.05);
   transition: all 0.3s ease;
 }
